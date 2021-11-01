@@ -36,9 +36,9 @@
 /* System-specific feature definitions and include files. */
 #include "rldefs.h"
 
-#if defined (GWINSZ_IN_SYS_IOCTL)
+//#if defined (GWINSZ_IN_SYS_IOCTL)
 #  include <sys/ioctl.h>
-#endif /* GWINSZ_IN_SYS_IOCTL */
+//#endif /* GWINSZ_IN_SYS_IOCTL */
 
 /* Some standard library routines. */
 #include "readline.h"

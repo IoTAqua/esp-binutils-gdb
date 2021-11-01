@@ -46,9 +46,9 @@
 #include "rldefs.h"
 #include "rlmbutil.h"
 
-#if defined (TIOCSTAT_IN_SYS_IOCTL)
+//#if defined (TIOCSTAT_IN_SYS_IOCTL)
 #  include <sys/ioctl.h>
-#endif /* TIOCSTAT_IN_SYS_IOCTL */
+//#endif /* TIOCSTAT_IN_SYS_IOCTL */
 
 /* Some standard library routines. */
 #include "readline.h"
