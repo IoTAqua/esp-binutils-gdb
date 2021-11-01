@@ -37,9 +37,9 @@
 
 #include "rldefs.h"
 
-#if defined (GWINSZ_IN_SYS_IOCTL)
+//#if defined (GWINSZ_IN_SYS_IOCTL)
 #  include <sys/ioctl.h>
-#endif /* GWINSZ_IN_SYS_IOCTL */
+//#endif /* GWINSZ_IN_SYS_IOCTL */
 
 #include "rltty.h"
 #include "readline.h"

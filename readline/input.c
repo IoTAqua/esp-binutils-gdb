@@ -47,9 +47,9 @@
 
 #include "posixselect.h"
 
-#if defined (FIONREAD_IN_SYS_IOCTL)
+//#if defined (FIONREAD_IN_SYS_IOCTL)
 #  include <sys/ioctl.h>
-#endif
+//#endif
 
 #include <stdio.h>
 #include <errno.h>

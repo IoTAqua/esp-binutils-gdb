@@ -29,9 +29,9 @@
 
 /* Try to find the definitions of `struct winsize' and TIOGCWINSZ */
 
-#if defined (GWINSZ_IN_SYS_IOCTL) && !defined (TIOCGWINSZ)
+//#if defined (GWINSZ_IN_SYS_IOCTL) && !defined (TIOCGWINSZ)
 #  include <sys/ioctl.h>
-#endif /* GWINSZ_IN_SYS_IOCTL && !TIOCGWINSZ */
+//#endif /* GWINSZ_IN_SYS_IOCTL && !TIOCGWINSZ */
 
 #if defined (STRUCT_WINSIZE_IN_TERMIOS) && !defined (STRUCT_WINSIZE_IN_SYS_IOCTL)
 #  include <termios.h>
