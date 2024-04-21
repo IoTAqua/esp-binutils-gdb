@@ -44,6 +44,10 @@
 # else
 #  define DIAGNOSTIC_IGNORE_SWITCH_DIFFERENT_ENUM_TYPES
 # endif
+# if __has_warning ("-Wenum-constexpr-conversion")
+#  define DIAGNOSTIC_IGNORE_ENUM_CONSTEXPR_CONVERSION \
+  DIAGNOSTIC_IGNORE ("-Wenum-constexpr-conversion")
+# endif
 #elif defined (__GNUC__) /* GCC */
 
 # define DIAGNOSTIC_IGNORE_SELF_MOVE
@@ -59,6 +63,10 @@
 # define DIAGNOSTIC_IGNORE_UNUSED_FUNCTION
 # define DIAGNOSTIC_IGNORE_SWITCH_DIFFERENT_ENUM_TYPES
 
+#endif
+
+#ifndef DIAGNOSTIC_IGNORE_ENUM_CONSTEXPR_CONVERSION
+# define DIAGNOSTIC_IGNORE_ENUM_CONSTEXPR_CONVERSION
 #endif
 
 #endif /* COMMON_DIAGNOSTICS_H */
